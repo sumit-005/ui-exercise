@@ -20,6 +20,41 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  color: #2f3542;
+}
+
+.products {
+  margin: 3rem 0rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
+  gap: 15px;
+  max-width: 335px;
+  margin-right: 4rem;
+  width: 50%;
+}
+
+.configuration {
+  margin: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 15px;
+  max-width: 345px;
+  margin-left: 4rem;
+  width: 50%;
+
+  h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+  p {
+    font-size: 0.775rem;
+    font-weight: 500;
+  }
 }

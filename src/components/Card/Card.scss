@@ -1,0 +1,48 @@
+.card {
+  height: 160px;
+  width: 160px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: space-between;
+  align-items: center;
+  border: 0.4px solid #f1f1f1;
+  text-align: center;
+
+  p {
+    font-size: 12px;
+    font-weight: 600;
+    color: #2e3235;
+    max-width: 100px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-top: 0.4rem;
+    // text-align: center;
+  }
+
+  .image {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+  svg {
+    font-size: 1rem;
+    color: #fd0061;
+    margin-right: 0.2rem;
+  }
+
+  p {
+    font-size: 12px;
+    color: #576574;
+    font-weight: 600;
+  }
+}

@@ -1,4 +1,4 @@
-export const data = [
+export const tools = [
   {
     image: "azure",
     label: "Azure",

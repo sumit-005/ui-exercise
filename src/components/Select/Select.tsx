@@ -2,8 +2,7 @@ import React from "react";
 import "./Select.scss";
 import { forwardRef } from "react";
 import { Group, Avatar, Text, Select as MantineSelect } from "@mantine/core";
-import Search from "../../assets/svg/Search";
-import { data } from "../../data/tools";
+import { IconSearch } from "@tabler/icons";
 
 interface ItemProps extends React.ComponentPropsWithoutRef<"div"> {
   image: string;
@@ -11,13 +10,28 @@ interface ItemProps extends React.ComponentPropsWithoutRef<"div"> {
   description: string;
 }
 
-const Select = () => {
+interface SelectProps {
+  setSelectedProduct: (product: string) => void;
+  selectedProduct: string;
+  data: any[];
+  disabled?: boolean;
+}
+
+const Select = ({
+  setSelectedProduct,
+  selectedProduct,
+  data,
+  disabled,
+}: SelectProps) => {
+  console.log("data", data);
   return (
     <MantineSelect
       placeholder="Search for any software"
       className="search"
       itemComponent={SelectItem}
       data={data}
+      onChange={(value: string) => setSelectedProduct(value)}
+      value={selectedProduct}
       searchable
       maxDropdownHeight={400}
       nothingFound="No Results Found"
@@ -28,13 +42,14 @@ const Select = () => {
       }
       transition="pop-top-left"
       transitionDuration={80}
-      icon={<Search />}
+      icon={<IconSearch />}
       transitionTimingFunction="ease"
       styles={(theme) => ({
         item: {
           color: "#576574",
         },
       })}
+      disabled={disabled}
     />
   );
 };
