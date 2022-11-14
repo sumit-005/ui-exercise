@@ -1,0 +1,11 @@
+.select {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  //   color: #576574;
+}
+
+.search .mantine-Input-wrapper {
+  ::placeholder {
+    font-weight: 600;
+  }
+}
