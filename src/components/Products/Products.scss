@@ -1,0 +1,24 @@
+.products {
+  margin: 3rem 0rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 15px;
+  max-width: 335px;
+  margin-right: 4rem;
+}
+
+.product-count {
+  margin: 0 auto;
+  font-size: 14px;
+  color: var(--light-grey);
+  margin-top: 1rem;
+}
+
+@media only screen and (max-width: 870px) {
+  .products {
+    margin-right: 0;
+  }
+}

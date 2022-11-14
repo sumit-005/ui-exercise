@@ -9,7 +9,14 @@
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
-  background: #ffffff;
+
+  font-family: "Inter", sans-serif;
+
+  --light-grey: #a4b0be;
+  --alert: #fd0061;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;

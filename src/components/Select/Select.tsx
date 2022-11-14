@@ -23,7 +23,6 @@ const Select = ({
   data,
   disabled,
 }: SelectProps) => {
-  console.log("data", data);
   return (
     <MantineSelect
       placeholder="Search for any software"
@@ -42,11 +41,14 @@ const Select = ({
       }
       transition="pop-top-left"
       transitionDuration={80}
-      icon={<IconSearch />}
+      icon={<IconSearch size={18} />}
       transitionTimingFunction="ease"
       styles={(theme) => ({
         item: {
-          color: "#576574",
+          color:
+            theme.colorScheme === "dark"
+              ? theme.colors.dark[0]
+              : theme.colors.dark[5],
         },
       })}
       disabled={disabled}

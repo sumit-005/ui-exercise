@@ -15,7 +15,7 @@ const Card = ({ image, label, value, onRemove }: CardProps) => {
     <MantineCard shadow="sm" p="lg" radius="md" className="card">
       <div className="image">
         {image === "empty" ? (
-          <Avatar>
+          <Avatar style={{ marginTop: "1.5rem" }}>
             <IconPlus size={48} />
           </Avatar>
         ) : (

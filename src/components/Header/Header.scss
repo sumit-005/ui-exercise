@@ -1,0 +1,28 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+
+  .mantine-Text-root {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+  }
+  p {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+}
+
+.box {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 15px;
+  max-width: 345px;
+  margin-left: 4rem;
+  width: 50%;
+
+  P {
+    color: #7d8790;
+    font-size: 14px;
+  }
+}
